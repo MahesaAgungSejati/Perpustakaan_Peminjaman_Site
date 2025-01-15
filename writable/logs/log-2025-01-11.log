@@ -1,0 +1,1458 @@
+ERROR - 2025-01-11 14:48:08 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:48:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:48:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:48:08 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:48:16 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:48:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:48:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:48:16 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:48:49 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: members]
+in APPPATH\Controllers\MemberController.php on line 54.
+ 1 APPPATH\Controllers\MemberController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Controllers\\MemberController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:48:55 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: members]
+in APPPATH\Controllers\MemberController.php on line 54.
+ 1 APPPATH\Controllers\MemberController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Controllers\\MemberController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:49:11 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: members]
+in APPPATH\Controllers\MemberController.php on line 54.
+ 1 APPPATH\Controllers\MemberController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Controllers\\MemberController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:49:17 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: members]
+in APPPATH\Controllers\MemberController.php on line 54.
+ 1 APPPATH\Controllers\MemberController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Controllers\\MemberController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:52:17 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:52:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members/]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:52:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:52:17 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:52:37 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:52:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:52:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:52:37 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:55:51 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:55:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:51 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:55:56 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:55:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:56 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:55:56 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:55:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:56 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:55:57 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:55:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:55:57 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:56:08 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:56:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:56:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:56:08 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:59:46 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:59:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:59:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:59:46 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 14:59:46 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 14:59:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:59:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 14:59:46 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 15:00:01 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 15:00:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:00:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:00:01 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:01:26 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:01:32 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members/]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members/', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:01:43 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members/]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members/', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:02:34 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members/]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members/', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:03:55 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members/]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members/', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:03:56 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members/]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members/', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:03:56 --> Error: Class "App\Filters\CORS" not found
+[Method: GET, Route: members/]
+in SYSTEMPATH\Filters\Filters.php on line 197.
+ 1 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+ 2 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('members/', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 15:04:17 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 15:04:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members/]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:04:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:04:17 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 15:04:47 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 15:04:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members/]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:04:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:04:47 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+ERROR - 2025-01-11 15:05:09 --> mysqli_sql_exception: Table 'ci4.members' doesn't exist in C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\app\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(933): App\Controllers\MemberController->index()
+#8 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+#9 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Mahesa Agung Sejati\Documents\SEMESTER 6\Sertifikasi Kompetensi\perpustakaan\system\rewrite.php(44): require_once('C:\\Users\\Mahesa...')
+#14 {main}
+CRITICAL - 2025-01-11 15:05:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+[Method: GET, Route: members/]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:05:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:05:09 --> [Caused by] mysqli_sql_exception: Table 'ci4.members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `members`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `members`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `members`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `members`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\MemberController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MemberController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MemberController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:30:30 --> ErrorException: Undefined array key "publication_year"
+[Method: GET, Route: books]
+in APPPATH\Views\books\index.php on line 34.
+ 1 APPPATH\Views\books\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "publication_year"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('books/index', [], true)
+ 5 APPPATH\Controllers\BookController.php(19): view('books/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BookController->getBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:31:01 --> ErrorException: Undefined array key "publication_year"
+[Method: GET, Route: books]
+in APPPATH\Views\books\index.php on line 34.
+ 1 APPPATH\Views\books\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "publication_year"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('books/index', [], true)
+ 5 APPPATH\Controllers\BookController.php(19): view('books/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BookController->getBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:31:02 --> ErrorException: Undefined array key "publication_year"
+[Method: GET, Route: books]
+in APPPATH\Views\books\index.php on line 34.
+ 1 APPPATH\Views\books\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "publication_year"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('books/index', [], true)
+ 5 APPPATH\Controllers\BookController.php(19): view('books/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BookController->getBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 15:31:18 --> ErrorException: Undefined array key "publication_year"
+[Method: GET, Route: books]
+in APPPATH\Views\books\index.php on line 34.
+ 1 APPPATH\Views\books\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "publication_year"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\books\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('books/index', [], true)
+ 5 APPPATH\Controllers\BookController.php(19): view('books/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BookController->getBooks()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BookController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:07:06 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:07:23 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:07:37 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:08:10 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:08:12 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:08:23 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:08:58 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: loans]
+in APPPATH\Views\loans\index.php on line 31.
+ 1 APPPATH\Views\loans\index.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/index', [], true)
+ 5 APPPATH\Controllers\LoanController.php(28): view('loans/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->getLoans()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:13:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 APPPATH\Views\loans\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 5 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:14:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 APPPATH\Views\loans\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 5 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:14:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 APPPATH\Views\loans\edit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\edit.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\app\\Views\\loans\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 5 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:15:30 --> Error: Call to undefined function form_open()
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 4 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:15:31 --> Error: Call to undefined function form_open()
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 4 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:15:31 --> Error: Call to undefined function form_open()
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 4 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:15:32 --> Error: Call to undefined function form_open()
+[Method: GET, Route: loans/edit/5]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 4 APPPATH\Controllers\LoanController.php(67): view('loans/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:21:12 --> Error: Call to undefined function form_open()
+[Method: GET, Route: loans/edit/2]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 4 APPPATH\Controllers\LoanController.php(80): view('loans/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
+CRITICAL - 2025-01-11 16:21:14 --> Error: Call to undefined function form_open()
+[Method: GET, Route: loans/edit/2]
+in APPPATH\Views\loans\edit.php on line 20.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loans/edit', [], true)
+ 4 APPPATH\Controllers\LoanController.php(80): view('loans/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoanController->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoanController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Mahesa Agung Sejati\\Documents\\SEMESTER 6\\Sertifikasi Kompetensi\\perpustakaan\\public\\index.php')
